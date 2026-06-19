@@ -1,0 +1,8 @@
+module Rack
+  module Openid2
+    module Version
+      VERSION: String
+    end
+    VERSION: String
+  end
+end
