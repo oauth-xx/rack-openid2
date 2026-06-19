@@ -20,7 +20,7 @@ gem_version =
 Gem::Specification.new do |spec|
   spec.name = "rack-openid2"
   spec.version = gem_version
-  spec.authors = ["Joshua Peek", "Bob Zoller", "Daniel Shelton", "Nat Budin", "nov matake", "Kenny Buckler", "Greg Gershman", "grosser", "Mike Dillon", "Richard Wilson", "Peter Boling", "Aboling0", "Annibelle Boling"]
+  spec.authors = ["Joshua Peek", "Bob Zoller", "Daniel Shelton", "Nat Budin", "nov matake", "Kenny Buckler", "Greg Gershman", "grosser", "Mike Dillon", "Richard Wilson", "Peter H. Boling", "Aboling0", "Annibelle Boling"]
   spec.email = ["floss@galtzo.com"]
 
   spec.summary = "💎 Provides a more HTTPish API around the ruby-openid2 library"

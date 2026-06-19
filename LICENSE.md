@@ -18,6 +18,6 @@ Choose the option that best fits your use case:
 - Copyright (c) 2013 Mike Dillon
 - Copyright (c) 2014 grosser
 - Copyright (c) 2014 Richard Wilson
-- Copyright (c) 2024, 2026 Peter Boling
+- Copyright (c) 2024, 2026 Peter H. Boling
 - Copyright (c) 2025 Aboling0
 - Copyright (c) 2025 Annibelle Boling
