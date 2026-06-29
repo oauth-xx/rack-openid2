@@ -51,7 +51,7 @@ module Rack
           str.split(", ").each { |pair|
             key, *value = pair.split("=")
             value = value.join("=")
-            value.gsub!(/^\"/, "").gsub!(/\"$/, "")
+            value.gsub!(/^"/, "").gsub!(/"$/, "")
             value = value.split(",")
             params[key] = (value.length > 1) ? value : value.first
           }
@@ -62,15 +62,17 @@ module Rack
 
     class TimeoutResponse
       include ::OpenID::Consumer::Response
+
       STATUS = :failure
     end
 
     class MissingResponse
       include ::OpenID::Consumer::Response
+
       STATUS = :missing
     end
 
-    HTTP_METHODS = %w(GET HEAD PUT POST DELETE OPTIONS)
+    HTTP_METHODS = %w[GET HEAD PUT POST DELETE OPTIONS]
 
     RESPONSE = "rack.openid.response"
     AUTHENTICATE_HEADER = "WWW-Authenticate"

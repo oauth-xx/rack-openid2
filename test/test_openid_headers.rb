@@ -23,24 +23,24 @@ describe "openid headers" do
   it "parses header" do
     assert_equal(
       {"identity" => "http://example.com/"},
-      Rack::OpenID.parse_header('OpenID identity="http://example.com/"'),
+      Rack::OpenID.parse_header('OpenID identity="http://example.com/"')
     )
     assert_equal(
       {"identity" => "http://example.com/?foo=bar"},
-      Rack::OpenID.parse_header('OpenID identity="http://example.com/?foo=bar"'),
+      Rack::OpenID.parse_header('OpenID identity="http://example.com/?foo=bar"')
     )
     assert_equal(
       {"identity" => "http://example.com/", "return_to" => "http://example.org/"},
-      Rack::OpenID.parse_header('OpenID identity="http://example.com/", return_to="http://example.org/"'),
+      Rack::OpenID.parse_header('OpenID identity="http://example.com/", return_to="http://example.org/"')
     )
     assert_equal(
       {"identity" => "http://example.com/", "required" => ["nickname", "email"]},
-      Rack::OpenID.parse_header('OpenID identity="http://example.com/", required="nickname,email"'),
+      Rack::OpenID.parse_header('OpenID identity="http://example.com/", required="nickname,email"')
     )
 
     # ensure we don't break standard HTTP basic auth
     assert_empty(
-      Rack::OpenID.parse_header('Realm="Example"'),
+      Rack::OpenID.parse_header('Realm="Example"')
     )
   end
 end

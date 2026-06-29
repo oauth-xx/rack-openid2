@@ -115,7 +115,7 @@ describe "openid integration" do
   it "with_attribute_exchange" do
     app = app(
       required: ["http://axschema.org/namePerson/friendly", "http://axschema.org/contact/email"],
-      optional: "http://axschema.org/namePerson",
+      optional: "http://axschema.org/namePerson"
     )
     mock_openid_request(app, "/", method: "GET")
     follow_openid_redirect!(app)
@@ -129,7 +129,7 @@ describe "openid integration" do
   it "with_oauth" do
     app = app(
       "oauth[consumer]": "www.example.com",
-      "oauth[scope]": ["http://docs.google.com/feeds/", "http://spreadsheets.google.com/feeds/"],
+      "oauth[scope]": ["http://docs.google.com/feeds/", "http://spreadsheets.google.com/feeds/"]
     )
     mock_openid_request(app, "/", method: "GET")
 
@@ -149,7 +149,7 @@ describe "openid integration" do
   it "with_pape" do
     app = app(
       "pape[preferred_auth_policies]": ["test_policy1", "test_policy2"],
-      "pape[max_auth_age]": 600,
+      "pape[max_auth_age]": 600
     )
     mock_openid_request(app, "/", method: "GET")
 
@@ -187,7 +187,7 @@ describe "openid integration" do
 
   it "with_realm_wildcard" do
     app = app(
-      realm_domain: "*.example.org",
+      realm_domain: "*.example.org"
     )
     mock_openid_request(app, "/", method: "GET")
 

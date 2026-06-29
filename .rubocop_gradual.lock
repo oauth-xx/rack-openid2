@@ -1,10 +1,5 @@
 {
-  "bin/bundle:3870166066": [
-    [33, 24, 58, "Performance/ConstantRegexp: Extract this regexp into a constant, memoize it, or append an `/o` option to its options.", 2287896868],
-    [59, 40, 62, "Performance/ConstantRegexp: Extract this regexp into a constant, memoize it, or append an `/o` option to its options.", 2593609308],
-    [64, 5, 20, "ThreadSafety/InstanceVariableInClassMethod: Avoid instance variables in class methods.", 2485198147],
-    [86, 7, 34, "Style/MethodCallWithArgsParentheses: Use parentheses for method calls with arguments.", 991972134],
-    [93, 5, 194, "Style/MethodCallWithArgsParentheses: Use parentheses for method calls with arguments.", 1374511802],
-    [94, 5, 7, "Style/MethodCallWithArgsParentheses: Use parentheses for method calls with arguments.", 285434243]
+  "lib/rack/openid.rb:3434635912": [
+    [110, 32, 35, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 3827955158]
   ]
 }

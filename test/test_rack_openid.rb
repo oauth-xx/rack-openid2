@@ -10,7 +10,7 @@ describe Rack::OpenID do
     it "stops the base64 encoded nonce and sig from having its +'s transformed into spaces by Rack::Request" do
       params = {
         "openid.sig" => "a string with spaces",
-        "openid.response_nonce" => "again with spaces!",
+        "openid.response_nonce" => "again with spaces!"
       }
 
       call(params)
