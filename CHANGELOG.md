@@ -165,3 +165,15 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Removed
 
 - Support for Ruby < 2.7
+
+## [2.0.3] - 2024-09-25
+
+- TAG: [v2.0.3][2.0.3t]
+
+### Changed
+
+- Historical release notes are unavailable in this changelog.
+
+[Unreleased]: https://github.com/ruby-openid/rack-openid2/compare/v2.0.3...HEAD
+[2.0.3]: https://github.com/ruby-openid/rack-openid2/compare/f6f6b8954acd8490ef6042c75f97b5ffb1f28554...v2.0.3
+[2.0.3t]: https://github.com/ruby-openid/rack-openid2/releases/tag/v2.0.3
