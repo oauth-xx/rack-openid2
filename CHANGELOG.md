@@ -102,7 +102,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Security
 
-## 2.0.3 - 2024-09-25
+## [2.0.3] - 2024-09-25
 
 - COVERAGE:  97.72% -- 214/219 lines in 4 files
 - BRANCH COVERAGE:  86.00% -- 43/50 branches in 4 files
@@ -117,7 +117,7 @@ Please file a bug if you notice a violation of semantic versioning.
 - Documentation typos
 - Documentation in Yard (on RubyDoc.info)
 
-## 2.0.2 - 2024-09-25
+## [2.0.2] - 2024-09-25
 
 - COVERAGE:  97.72% -- 214/219 lines in 4 files
 - BRANCH COVERAGE:  86.00% -- 43/50 branches in 4 files
@@ -135,7 +135,7 @@ Please file a bug if you notice a violation of semantic versioning.
 - Upgraded to ruby-openid2 v3.1.0
 - Moved to oauth-xx organization
 
-## 2.0.1 - 2024-09-05
+## [2.0.1] - 2024-09-05
 
 ### Added
 
@@ -148,7 +148,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Typo in gemspec description
 
-## 2.0.0 - 2024-09-04
+## [2.0.0] - 2024-09-04
 
 - COVERAGE:  97.72% -- 214/219 lines in 3 files
 - BRANCH COVERAGE:  86.00% -- 43/50 branches in 3 branches
@@ -165,14 +165,6 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Removed
 
 - Support for Ruby < 2.7
-
-## [2.0.3] - 2024-09-25
-
-- TAG: [v2.0.3][2.0.3t]
-
-### Changed
-
-- Historical release notes are unavailable in this changelog.
 
 [Unreleased]: https://github.com/ruby-openid/rack-openid2/compare/v2.0.3...HEAD
 [2.0.3]: https://github.com/ruby-openid/rack-openid2/compare/f6f6b8954acd8490ef6042c75f97b5ffb1f28554...v2.0.3
