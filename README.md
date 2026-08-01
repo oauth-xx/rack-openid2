@@ -21,6 +21,15 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+rack-openid2 wraps `ruby-openid2` in Rack middleware. An application requests
+authentication with a `401 Unauthorized` response and an OpenID
+`WWW-Authenticate` header; after the provider callback, the middleware verifies
+the response and places it in `env["rack.openid.response"]`.
+
+The gem also provides `Rack::OpenID::SimpleAuth` for applications that need to
+protect a route for one fixed OpenID identifier. It supports OpenID 1.x/2.0,
+not OpenID Connect (OIDC).
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -118,6 +127,20 @@ gem install rack-openid2
 ```
 
 ## ⚙️ Configuration
+
+Place session middleware before `Rack::OpenID`; the middleware raises when no
+`rack.session` is available. Supply an `OpenID::Store` as the optional second
+argument when associations and nonces must survive process restarts:
+
+```ruby
+use Rack::Session::Cookie, secret: ENV.fetch("SESSION_SECRET")
+use Rack::OpenID, OpenID::Store::Filesystem.new("tmp/openid")
+```
+
+Without an explicit store, Rack::OpenID uses `OpenID::Store::Memory`, which is
+appropriate only for a single long-running process. For `SimpleAuth`, provide
+the identifier to validate; it installs Rack::OpenID automatically but still
+requires session middleware.
 
 ## 🔧 Basic Usage
 
