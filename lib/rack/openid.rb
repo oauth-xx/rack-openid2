@@ -9,9 +9,9 @@ require "openid/extensions/sreg"
 require "openid/extensions/ax"
 require "openid/extensions/oauth"
 require "openid/extensions/pape"
+require_relative "openid/version"
 
 # This gem
-require_relative "openid/version"
 
 module Rack
   # A Rack middleware that provides a more HTTPish API around the
