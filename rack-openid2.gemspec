@@ -11,10 +11,10 @@ gem_version =
     # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!
     # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
     # See: https://github.com/panorama-ed/memo_wise/pull/397
-    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/rack/openid2/version.rb", mod) }::Rack::Openid2::Version::VERSION
+    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/rack/openid/version.rb", mod) }::Rack::OpenID::Version::VERSION
   else
-    require_relative "lib/rack/openid2/version"
-    Rack::Openid2::Version::VERSION
+    require_relative "lib/rack/openid/version"
+    Rack::OpenID::Version::VERSION
   end
 
 Gem::Specification.new do |spec|
