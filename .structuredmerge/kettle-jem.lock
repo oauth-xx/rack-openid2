@@ -1054,7 +1054,7 @@ files:
   sig/rack/openid.rbs:
     recipe: template_source_application_sig_rack_openid_rbs
     action: write
-    dest_sha256: a167599b67775e9d97e46b36835c6450df582e1f61aa0ca8cc730e071d8c839d
+    dest_sha256: aa71f0fa42aab694bb604e8fdd821e5f37577289605c8b4bf97e964a21fef904
     input_fingerprint: 9775ef1198147e7dfce1b17bfb4bb57bf52cd1221b043ba85b20be23e1dd57cf
     template_sources:
     - sig/gem.rbs.example
