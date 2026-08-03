@@ -2,7 +2,7 @@
   "lib/rack/openid.rb:2221114673": [
     [108, 32, 35, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 3827955158]
   ],
-  "spec/rack/openid/version_spec.rb:3339902760": [
-    [4, 1, 36, "RSpec/SpecFilePathFormat: Spec path should end with `rack/open_id/version*_spec.rb`.", 1078405705]
+  "spec/rack/openid/version_spec.rb:1169731010": [
+    [5, 1, 36, "RSpec/SpecFilePathFormat: Spec path should end with `rack/open_id/version*_spec.rb`.", 1078405705]
   ]
 }
