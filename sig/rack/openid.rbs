@@ -5,4 +5,9 @@ module Rack
     end
     VERSION: String
   end
+
+  module Version
+    VERSION: String
+  end
+  VERSION: String
 end
