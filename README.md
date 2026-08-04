@@ -1,6 +1,6 @@
 <a href="https://github.com/ruby-openid"><img alt="ruby-openid Logo by GitHub" src="https://github.com/ruby-openid.png?size=192" width="14%" align="right"/></a>
 
-# 💎 rack-openid2 / Rack
+# 💎 rack-openid2 / Rack::OpenID
 
 [![Version][👽versioni]][👽version] [![Ruby Users Forum][✉️ruby-forum-top-img]][✉️ruby-forum] [![GitHub tag (latest SemVer)][⛳️tag-img]][⛳️tag] [![License: MIT][📄license-img]][📄license] [![Total downloads][👽dl-ranki]][👽dl-rank] [![CodeCov Test Coverage][🏀codecovi]][🏀codecov] [![Coveralls Test Coverage][🏀coveralls-img]][🏀coveralls] [![QLTY Test Coverage][🏀qlty-covi]][🏀qlty-cov] [![QLTY Maintainability][🏀qlty-mnti]][🏀qlty-mnt] [![CI Heads][🚎3-hd-wfi]][🚎3-hd-wf] [![CI Runtime Dependencies @ HEAD][🚎12-crh-wfi]][🚎12-crh-wf] [![CI Current][🚎11-c-wfi]][🚎11-c-wf] [![CI Truffle Ruby][🚎9-t-wfi]][🚎9-t-wf] [![CI JRuby][🚎10-j-wfi]][🚎10-j-wf] [![Deps Locked][🚎13-🔒️-wfi]][🚎13-🔒️-wf] [![Deps Unlocked][🚎14-🔓️-wfi]][🚎14-🔓️-wf] [![CI Test Coverage][🚎2-cov-wfi]][🚎2-cov-wf] [![CI Style][🚎5-st-wfi]][🚎5-st-wf] [![Apache SkyWalking Eyes License Compatibility Check][🚎15-🪪-wfi]][🚎15-🪪-wf]
 
@@ -443,7 +443,7 @@ Thanks for RTFM. ☺️
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
 [⛳️gem-namespace]: https://github.com/ruby-openid/rack-openid2
-[⛳️namespace-img]: https://img.shields.io/badge/namespace-Rack-3C2D2D.svg?style=square&logo=ruby&logoColor=white
+[⛳️namespace-img]: https://img.shields.io/badge/namespace-Rack::OpenID-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://clickgems.clickhouse.com/dashboard/rack-openid2
 [⛳️name-img]: https://img.shields.io/badge/name-rack--openid2-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
 [⛳️tag-img]: https://img.shields.io/github/tag/ruby-openid/rack-openid2.svg
