@@ -15,10 +15,5 @@ SimpleCov.configure do
   else
     track_files "{lib/**/*.rb,lib/**/*.rake,exe/*.rb}"
   end
-  if SimpleCov::Configuration.method_defined?(:cover)
-    cover "lib/**/*.rb", "lib/**/*.rake", "exe/*.rb"
-  else
-    track_files "{lib/**/*.rb,lib/**/*.rake,exe/*.rb}"
-  end
   cover "lib/**/*.rb", "lib/**/*.rake", "exe/*.rb"
 end

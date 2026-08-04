@@ -21,15 +21,6 @@
       ]
     }
   ],
-  "if SimpleCov::Configuration.method_defined?(:cover)\ncover \"lib/**/*.rb\", \"lib/**/*.rake\", \"exe/*.rb\"": [
-    {
-      "file": ".simplecov",
-      "lines": [
-        13,
-        18
-      ]
-    }
-  ],
   "modular: gemfiles/modular/style.gemfile\naction: remove_modular_gem": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
