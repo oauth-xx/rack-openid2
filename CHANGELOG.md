@@ -99,6 +99,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
 
+- Preserve the Rack::OpenID version namespace during loading.
+
 ### Security
 
 ## [2.0.3] - 2024-09-25

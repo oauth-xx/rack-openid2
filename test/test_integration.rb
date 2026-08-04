@@ -167,22 +167,7 @@ describe "openid integration" do
   end
 
   it "with_immediate_mode_setup_needed" do
-    skip("because failing, and not enough time to fix all the things") do
-      app = app(identifier: "#{Rots::Mocks::RotsServer::SERVER_URL}/john.doe?openid.success=false", immediate: true)
-      mock_openid_request(app, "/", method: "GET")
-
-      location = @response.headers["Location"]
-
-      assert_match(/openid.mode=checkid_immediate/, location)
-
-      follow_openid_redirect!(app)
-
-      assert_equal 307, @response.status
-      assert_equal "GET", @response.headers["X-Method"]
-      assert_equal "/", @response.headers["X-Path"]
-      assert_equal Rots::Mocks::RotsServer::SERVER_URL, @response.headers["Location"]
-      assert_equal "setup_needed", @response.body
-    end
+    skip "because failing, and not enough time to fix all the things"
   end
 
   it "with_realm_wildcard" do
